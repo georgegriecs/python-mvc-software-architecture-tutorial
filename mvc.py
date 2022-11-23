@@ -31,8 +31,8 @@ class UUIDGen():
         self.root.mainloop()
 
     def handle_click_generate_uuid(self):
-        self.uuid.append(uuid.uuid4)
-        self.list.insert(0,self.uuid[-1])
+        self.uuid.append(uuid.uuid4())
+        self.list.insert(tk.END,self.uuid[-1])
 
     def handle_click_clear_list(self):
         self.uuid = []
